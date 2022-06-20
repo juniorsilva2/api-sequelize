@@ -1,0 +1,7 @@
+implementar uma estratégia de cache
+sempre que for fazer a busca, primeiro buscar por email no redis se achar devolver o objeto e não entrar no postgres, se não achar, buscar no postgres e adicionar os dados no redis
+
+
+
+redis chave:email, valor:JSON completo, TTL de 1 hora
+
